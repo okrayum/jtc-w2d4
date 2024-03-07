@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interests</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <header>
+        <h1>{% block title %}Welcome to My Interests!{% endblock %}</h1>
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/coding">CODING</a></li>
+                <li><a href="/foodie">FOODIE</a></li>
+                <li><a href="/streaming">STREAMING</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <div id="imagesDiv">
+            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="laptop with code">
+            <img src="https://images.pexels.com/photos/7613561/pexels-photo-7613561.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="tacos">
+            <img src="https://images.pexels.com/photos/987586/pexels-photo-987586.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="NetFlix logo">
+        </div>
+        {% endblock %}
+    </main>
+
+    <!-- JavaScript link here -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>

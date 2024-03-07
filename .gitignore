@@ -1,0 +1,21 @@
+# Virtual environment directory
+venv/
+
+# Compiled Python files
+*.pyc
+
+# Environment configuration files
+.env
+
+# Logs and temporary files
+*.log
+*.swp
+
+# IDE-specific files and directories
+.vscode/
+.idea/
+
+# Dependency management files
+/requirements.txt
+/Pipfile
+/Pipfile.lock
